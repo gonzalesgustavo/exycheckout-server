@@ -1,0 +1,19 @@
+shop
+    - login
+    - register 
+    - setup
+
+products
+    - addProduct
+    - getProducts
+    - getProduct
+    - updateProduct
+    - deleteProduct
+
+[ X ] Setup base for server
+[ X ] Setup routes for shop
+[ X ] Setup routes for products
+[ X ] Move logic to controller
+[  ] Move database logic to Model
+[  ] Test routes
+[  ] Properly handle CORS
