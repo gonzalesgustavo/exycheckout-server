@@ -12,6 +12,24 @@ products
 
 DB Model:
     users:
+        id
+        fName -> String
+        lName -> String
+        address -> String
+        city -> String
+        state -> String
+        standing -> String
+        fees -> Float Array
+    Agreements:
+        id
+        userId
+        productId
+        approval -> Boolean
+        approvee -> adminId
+        date -> Date
+        dateDue -> Date
+        daysLate -> Integer  
+    employees:
         -id
         -name -> String
         -username -> String
@@ -41,3 +59,4 @@ DB Model:
 [  ] Error Handling
 [  ] Test routes
 [  ] Properly handle CORS
+
