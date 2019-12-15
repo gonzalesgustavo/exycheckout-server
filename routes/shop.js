@@ -2,16 +2,19 @@ const express = require('express');
 
 const router = express.Router();
 
-const { login, register, setup, checkout, checkin } = require('../controllers/shop.controller');
-
-router.post('/login', login);
-
-router.post('/register', register);
+const { setup, checkout, checkin, confirm, closeShop, updateShop } = require('../controllers/shop.controller');
 
 router.post('/setup', setup);
 
-router.post('/checkout', checkout);
+// router.delete('/remove/:id', closeShop);
 
-router.post('/checkin', checkin);
+// router.patch('/update:id', updateShop);
+
+// router.post('/checkout', checkout);
+
+// router.post('/checkin', checkin);
+
+// router.post('/return', confirm);
+
 
 module.exports = router;

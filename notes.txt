@@ -17,7 +17,7 @@ DB Model:
         -username -> String
         -email -> string (Email)
         -pwd -> String (hashed)
-        -position -> String
+        -position -> Array (positions)
     Shop:
         -id
         -catagory -> String
@@ -37,5 +37,7 @@ DB Model:
 [ X ] Setup routes for products
 [ X ] Move logic to controller
 [  ] Move database logic to Model
+[  ] Move Model data to database
+[  ] Error Handling
 [  ] Test routes
 [  ] Properly handle CORS
