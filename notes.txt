@@ -10,6 +10,28 @@ products
     - updateProduct
     - deleteProduct
 
+DB Model:
+    users:
+        -id
+        -name -> String
+        -username -> String
+        -email -> string (Email)
+        -pwd -> String (hashed)
+        -position -> String
+    Shop:
+        -id
+        -catagory -> String
+        -onloan -> String (Array of product id's)
+        -incoming -> String (array of product id's)
+    product:
+        -id
+        -shopid -> String
+        -name -> String
+        -location -> String
+        -barcode -> String
+        -state -> String
+        -status -> String
+
 [ X ] Setup base for server
 [ X ] Setup routes for shop
 [ X ] Setup routes for products
